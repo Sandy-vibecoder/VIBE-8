@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="260" viewBox="0 0 900 260" role="img" aria-label="VIBE-8 — Visual Indicator Board, Eight LEDs">
+  <defs>
+    <linearGradient id="board" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#11533c"/>
+      <stop offset="1" stop-color="#0a2e21"/>
+    </linearGradient>
+    <filter id="glow" x="-150%" y="-150%" width="400%" height="400%">
+      <feGaussianBlur stdDeviation="7"/>
+    </filter>
+    <radialGradient id="lens" cx="0.38" cy="0.35" r="0.75">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.95"/>
+      <stop offset="0.35" stop-color="#ffffff" stop-opacity="0.25"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- board with gold (ENIG-style) edge -->
+  <rect x="4" y="4" width="892" height="252" rx="22" fill="url(#board)" stroke="#d4a937" stroke-width="3"/>
+
+  <!-- copper traces -->
+  <g fill="none" stroke="#2f9a6c" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" opacity="0.75">
+    <path d="M 28 128 H 70 L 96 102 V 72 H 118"/>
+    <path d="M 28 150 H 82 L 108 176 V 200 H 150"/>
+    <path d="M 872 128 H 830 L 804 102 V 72 H 782"/>
+    <path d="M 872 150 H 818 L 792 176 V 200 H 750"/>
+  </g>
+  <g fill="#0a2e21" stroke="#d4a937" stroke-width="2.5">
+    <circle cx="118" cy="72" r="5"/><circle cx="150" cy="200" r="5"/>
+    <circle cx="782" cy="72" r="5"/><circle cx="750" cy="200" r="5"/>
+  </g>
+
+  <!-- corner mounting holes -->
+  <g fill="#06180f" stroke="#d4a937" stroke-width="3">
+    <circle cx="32" cy="32" r="9"/><circle cx="868" cy="32" r="9"/>
+    <circle cx="32" cy="228" r="9"/><circle cx="868" cy="228" r="9"/>
+  </g>
+
+  <!-- 8 LEDs -->
+  <g>
+    <g transform="translate(170 70)"><circle r="22" fill="#ff3b3b" filter="url(#glow)" opacity="0.8"/><circle r="15" fill="#ff3b3b"/><circle r="15" fill="url(#lens)"/></g>
+    <g transform="translate(250 70)"><circle r="22" fill="#ff8a00" filter="url(#glow)" opacity="0.8"/><circle r="15" fill="#ff8a00"/><circle r="15" fill="url(#lens)"/></g>
+    <g transform="translate(330 70)"><circle r="22" fill="#ffd400" filter="url(#glow)" opacity="0.8"/><circle r="15" fill="#ffd400"/><circle r="15" fill="url(#lens)"/></g>
+    <g transform="translate(410 70)"><circle r="22" fill="#3ddc5a" filter="url(#glow)" opacity="0.8"/><circle r="15" fill="#3ddc5a"/><circle r="15" fill="url(#lens)"/></g>
+    <g transform="translate(490 70)"><circle r="22" fill="#00d4d4" filter="url(#glow)" opacity="0.8"/><circle r="15" fill="#00d4d4"/><circle r="15" fill="url(#lens)"/></g>
+    <g transform="translate(570 70)"><circle r="22" fill="#2f8cff" filter="url(#glow)" opacity="0.8"/><circle r="15" fill="#2f8cff"/><circle r="15" fill="url(#lens)"/></g>
+    <g transform="translate(650 70)"><circle r="22" fill="#9b5cff" filter="url(#glow)" opacity="0.8"/><circle r="15" fill="#9b5cff"/><circle r="15" fill="url(#lens)"/></g>
+    <g transform="translate(730 70)"><circle r="22" fill="#ff4fd8" filter="url(#glow)" opacity="0.8"/><circle r="15" fill="#ff4fd8"/><circle r="15" fill="url(#lens)"/></g>
+  </g>
+
+  <!-- title + tagline (silkscreen white) -->
+  <text x="450" y="166" text-anchor="middle" font-family="'Segoe UI', Inter, Helvetica, Arial, sans-serif" font-size="80" font-weight="800" letter-spacing="8" fill="#f3f0e2">VIBE-8</text>
+  <text x="450" y="204" text-anchor="middle" font-family="'Segoe UI', Inter, Helvetica, Arial, sans-serif" font-size="17" font-weight="600" letter-spacing="5" fill="#9fd9b9">VISUAL INDICATOR BOARD · EIGHT LEDS</text>
+
+  <!-- J2-style header pads -->
+  <g fill="#d4a937">
+    <rect x="374" y="224" width="9" height="9" rx="1"/>
+    <rect x="391" y="224" width="9" height="9" rx="4.5"/><rect x="408" y="224" width="9" height="9" rx="4.5"/>
+    <rect x="425" y="224" width="9" height="9" rx="4.5"/><rect x="442" y="224" width="9" height="9" rx="4.5"/>
+    <rect x="459" y="224" width="9" height="9" rx="4.5"/><rect x="476" y="224" width="9" height="9" rx="4.5"/>
+    <rect x="493" y="224" width="9" height="9" rx="4.5"/><rect x="510" y="224" width="9" height="9" rx="4.5"/>
+    <rect x="527" y="224" width="9" height="9" rx="4.5"/>
+  </g>
+</svg>

@@ -1,4 +1,28 @@
-# VIBE-8 — Visual Indicator Board, Eight LEDs
+<p align="center">
+  <img src="docs/vibe8-logo.svg" alt="VIBE-8: Visual Indicator Board, Eight LEDs" width="760">
+</p>
+
+<p align="center">
+  <img alt="KiCad 10" src="https://img.shields.io/badge/KiCad-10-314CB0?logo=kicad&logoColor=white">
+  <img alt="Version 1.0" src="https://img.shields.io/badge/version-1.0-blueviolet">
+  <img alt="2 layers" src="https://img.shields.io/badge/layers-2-2ea44f">
+  <img alt="70 x 40 mm" src="https://img.shields.io/badge/size-70%20%C3%97%2040%20mm-0a7bbb">
+  <img alt="Through-hole" src="https://img.shields.io/badge/parts-through--hole-e67e22">
+  <img alt="ERC passing" src="https://img.shields.io/badge/ERC-passing-brightgreen">
+  <img alt="DRC passing" src="https://img.shields.io/badge/DRC-passing-brightgreen">
+  <img alt="Works with Arduino, ESP32, Pico" src="https://img.shields.io/badge/works%20with-Arduino%20%7C%20ESP32%20%7C%20Pico-00979D?logo=arduino&logoColor=white">
+</p>
+
+<p align="center">
+  <b>8 LEDs · 1 header · any microcontroller</b><br>
+  <a href="#ordering-the-pcb">Order the PCB</a> ·
+  <a href="#pinout">Pinout</a> ·
+  <a href="#example-code">Example code</a> ·
+  <a href="docs/VIBE-8_schematic.pdf">Schematic (PDF)</a> ·
+  <a href="fabrication/VIBE-8_v1.0_gerbers.zip">Gerbers (zip)</a>
+</p>
+
+---
 
 **VIBE-8 v1.0** is a small 8-channel LED indicator board. Plug it into any microcontroller (Arduino, ESP32, Raspberry Pi Pico, ...) through one 10-pin header and you get eight LEDs you can switch on and off from code: status lights, a binary counter, a VU meter, or a light chaser.
 
@@ -267,6 +291,7 @@ VIBE-8/
 │   ├── Universal_LED_Module.kicad_sch   (schematic)
 │   └── Universal_LED_Module.kicad_pcb   (PCB layout)
 ├── docs/
+│   ├── vibe8-logo.svg            ← project logo
 │   ├── VIBE-8_schematic.pdf      ← printable schematic
 │   ├── VIBE-8_schematic.png
 │   ├── VIBE-8_pcb_layout.pdf     ← layout: top copper, top silk, bottom copper, bottom silk
