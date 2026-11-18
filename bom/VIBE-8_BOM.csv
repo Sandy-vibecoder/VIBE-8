@@ -1,0 +1,5 @@
+"Reference","Value","Footprint","Qty"
+"D1-D8","LED","LED_THT:LED_D5.0mm","8"
+"J1","Conn_01x02","Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical","1"
+"J2","Conn_01x10","Connector_PinHeader_2.54mm:PinHeader_1x10_P2.54mm_Vertical","1"
+"R1-R8","330","Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal","8"
